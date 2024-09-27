@@ -1,77 +1,155 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
-  <head>
-    <title>cadastro do cliente</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f2f2f2;
-      }
-
-      h2 {
-        text-align: center;
-      }
-
-      form {
-        max-width: 400px;
-        margin: 20px auto;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-
-      label,
-      input {
-        display: block;
-        margin-bottom: 10px;
-      }
-
-      input[type="text"],
-      input[type="email"],
-      input[type="tel"] {
-        width: 95%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-      }
-
-      input[type="submit"] {
-        width: 100%;
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        background-color: #007bff;
-        color: #fff;
-        cursor: pointer;
-      }
-
-      input[type="submit"]:hover {
-        background-color: #0056b3;
-      }
-    </style>
-    <script type="text/javascript" src="./index.js" defer=""></script>
-    <link rel="stylesheet" href="./index.css">
-  </head>
-
-  <body>
-    <h2>Cadastro de Pessoas</h2>
-    <form>
-      <label>Nome:</label>
-      <input type="text" id="nome" name="nome" required="">
+<html>
 
 
-      <label>Email:</label>
-      <input type="email" id="email" name="email" required="">
-      <label>Telefone:</label>
-      <input type="tel" id="telefone" name="telefone" required="">
-      <input type="submit" value="Cadastrar">
-    </form>
 
 
+<head>
+  <title>Minha página pessoal</title>
+</head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+header{
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+header ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration; none;
+}
+section {
+ margin: 20px 0;
+}
+section#sobre,
+section#projetos,
+section#Cadastro,
+section#contato {
+  background-color: #fff;
+  padding: 20px ;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba( 0, 0, 0, 0.1)
+}
+
+
+footer{
+  text-aling: center;
+  margin-top: 20px;
+}
+h3{
+  text-align: center;
+}
+  form {
+  max-width: 400px;
+margin: 20px auto;
+Background-color: #fff;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba (0 , 0, 0, 0.1);
+}
+label,
+input {
+  display: block;
+  margin-bottom: 10px
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"]{
+ width: 95%;
+ padding: 10px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+}
+input[type="submit"]{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+input[type="submit"]:hover{
+  background-color: #0056b3;
+}
+
+
+
+
+  </style>
+
+
+
+
+<body>
+  <header>
+    <h1>Bem vindo a página de ROSMAGLIS</h1>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#projetos">projetos</a></li>
+        <li><a href="#cadastro">Cadastro</a></li>
+        <li><a href="#contato">contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="sobre">
+    <h2>sobre mim</h2>
+   <p>Oi,tudo bem? meu nome é Rosmaglis!</p>
+    <p>tenho 14 anos é sou da Venezuela,más moro no Brasil.</p>
+    <p>Naci no dia 31 de maio de 2010.Tenho 5 irmãs,3 adultas é 2 menor.O meu esporte favorito é o futebol. </p>
+    <p>Sou aluna do Waldemar kleinubing.Estou estudando programação no Senai.</p>
+   
+  </section>
+  <section id="projetos">
+<h2>Projetos</h2>
+<ul>
+<li>Projeto 1: <a href="#">Descrição 1</a></li>
+<li>Projeto 2: <a href="#">Descrição 2</a></li>
+<li>Projeto 3: <a href="#">Descrição 3</a></li>
+<li>Projeto 4: <a href="#">Descrição 4</a></li>
+<li>Projeto 5: <a href="#">Descrição 5</a></li>
+  </ul>
+  </section>
+<section id="Cadastro">
+  <h3>Cadastro de pessoas</h3>
+<form>
+<label>Nome:</label>
+<input type="text" id="nome" name="nome" required>
+<label>Email:</label>
+<input type="email" id="email" name="email" required>
+<label>telefone:</label>
+<input type="tel" id="telefone" name="telefone" required>
+<input type="submit" value="cadastrar">
+ </form>
+</section>
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>entre em contato comigo via <a href="mailto:rosmaglis_queiroz@estudante.sesisenai.org.br">rosmaglis_queiroz@estudante.sesisenai.org.br</a>.</p>
+    <section>
+      <footer>
+       <p>&copy; 2024 - ROSMAGLIS Quiroz</p>
+       </footer>
   </body>
+
 
 </html>
